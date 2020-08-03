@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark  header ">
       <a className="navbar-brand" href="#">
-        Saar Tal
+        SAAR TAL
       </a>
       <button
         className="navbar-toggler"

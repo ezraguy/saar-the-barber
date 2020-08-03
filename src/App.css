@@ -1,0 +1,6 @@
+/* disabling animation delay on mobile */
+@media screen and (max-width: 1000px) {
+  [data-aos-delay] {
+    transition-delay: 0s !important;
+  }
+}
