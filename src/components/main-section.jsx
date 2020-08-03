@@ -5,6 +5,10 @@ import { ReactComponent as InstaSvg } from "../svg/instagram.svg";
 import { ReactComponent as WhatsSvg } from "../svg/whatsapp.svg";
 
 const Main = () => {
+  const handleAppClick = () => {
+    window.location =
+      "https://calendar.plannie.co.il/?name=saarthebarber&self=true#!/";
+  };
   const goToSocial = (platform) => {
     if (platform === "insta")
       window.location = "https://www.instagram.com/saarthebarber/";
@@ -24,6 +28,7 @@ const Main = () => {
           Your next barber.
         </p>
         <button
+          onClick={handleAppClick}
           data-aos="fade-down"
           className="btn scheduleApp"
           data-aos-delay="400"

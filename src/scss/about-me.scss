@@ -1,4 +1,34 @@
 .about-me {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
+
+  .left-panel {
+    padding-top: 20px;
+    width: 100%;
+    height: 70vh;
+    font-family: "Raleway";
+  }
+  .right-panel {
+    padding-top: 20px;
+    width: 100%;
+    height: 70vh;
+  }
+  .title {
+    font-size: 25pt;
+    margin-bottom: 0;
+  }
+  .semi-title {
+    font-size: 20pt;
+  }
+  .info {
+    .hours {
+      display: inline-block;
+      margin-left: 10px;
+
+      .svg {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
 }
