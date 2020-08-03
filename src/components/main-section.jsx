@@ -1,20 +1,33 @@
 import React from "react";
 import "../scss/main-section.scss";
 import logo from "../images/logo.png";
+import { ReactComponent as InstaSvg } from "../svg/instagram.svg";
+import { ReactComponent as WhatsSvg } from "../svg/whatsapp.svg";
+
 const Main = () => {
+  const goToSocial = (platform) => {
+    if (platform === "insta")
+      window.location = "https://www.instagram.com/saarthebarber/";
+    if (platform === "insta")
+      window.location = "https://www.instagram.com/saarthebarber/";
+  };
   return (
-    <div className="container-fluid  p-0 mainWrap">
+    <div id="home" className="container-fluid  p-0 mainWrap">
       <div className="main container">
         <div data-aos="fade-down" data-aos-delay="100" className="content">
           <img src={logo} className="logo" alt="logo" />
         </div>
-        <p data-aos="fade-down" className="textUnderImg" data-aos-delay="200">
+        <p data-aos="fade-down" data-aos-delay="200" className="textUnderImg">
           Saar Tal,
         </p>
         <p data-aos="fade-down" data-aos-delay="300" className="textUnderImg">
           Your next barber.
         </p>
-        <button className="btn scheduleApp">
+        <button
+          data-aos="fade-down"
+          className="btn scheduleApp"
+          data-aos-delay="400"
+        >
           <span>Schedule Appointment</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -32,6 +45,10 @@ const Main = () => {
             <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
         </button>
+      </div>
+      <div className="icons">
+        <InstaSvg onClick={() => goToSocial("insta")} className="mr-2" />
+        <WhatsSvg />
       </div>
     </div>
   );
