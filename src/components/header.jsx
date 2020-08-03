@@ -3,9 +3,7 @@ import "../scss/header.scss";
 const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark  header ">
-      <a className="navbar-brand" href="#">
-        SAAR TAL
-      </a>
+      <p className="navbar-brand">SAAR TAL</p>
       <button
         className="navbar-toggler"
         type="button"
@@ -25,17 +23,17 @@ const Header = () => {
             </a>
           </li>
           <li className="nav-item middleLink">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#aboutMe">
               ABOUT ME
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#a">
               PRICING
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <a className="nav-link" href="#a">
               PRICING
             </a>
           </li>
