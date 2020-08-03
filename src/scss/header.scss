@@ -1,0 +1,26 @@
+.header {
+  background-color: transparent !important;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  .nav-link {
+    transition: 0.3s ease;
+  }
+  #navbarNav {
+    justify-content: center;
+    margin-right: 5%;
+    li {
+      font-size: 16pt;
+      font-family: "Roboto";
+
+      padding-right: 3rem;
+      padding-left: 3rem;
+    }
+  }
+
+  .navbar-brand {
+    font-weight: 600;
+  }
+}
