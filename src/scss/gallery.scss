@@ -1,0 +1,22 @@
+.gallery {
+  display: flex;
+  background-color: rgba(203, 203, 203, 0.886);
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  min-height: 50vh;
+  .title {
+    text-align: center;
+    font-size: 40pt;
+    font-family: "Special Elite";
+  }
+  .posts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .post {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

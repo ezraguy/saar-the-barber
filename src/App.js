@@ -5,6 +5,7 @@ import Header from './components/header';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AboutMe from './components/about-me';
+import Gallery from './components/gallery';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Header />
 
       <Main />
+      <Gallery />
       <AboutMe />
     </div>
   );

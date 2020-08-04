@@ -2,7 +2,7 @@ import React from "react";
 import "../scss/main-section.scss";
 import logo from "../images/logo.png";
 import { ReactComponent as InstaSvg } from "../svg/instagram.svg";
-import { ReactComponent as WhatsSvg } from "../svg/whatsapp.svg";
+import { ReactComponent as MapsSvg } from "../svg/maps.svg";
 
 const Main = () => {
   const handleAppClick = () => {
@@ -12,8 +12,8 @@ const Main = () => {
   const goToSocial = (platform) => {
     if (platform === "insta")
       window.location = "https://www.instagram.com/saarthebarber/";
-    if (platform === "insta")
-      window.location = "https://www.instagram.com/saarthebarber/";
+    if (platform === "google")
+      window.location = "https://g.page/saar-the-barber?share";
   };
   return (
     <div id="home" className="container-fluid  p-0 mainWrap">
@@ -53,7 +53,7 @@ const Main = () => {
       </div>
       <div className="icons">
         <InstaSvg onClick={() => goToSocial("insta")} className="mr-2" />
-        <WhatsSvg />
+        <MapsSvg onClick={() => goToSocial("google")} />
       </div>
     </div>
   );

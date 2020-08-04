@@ -1,34 +1,56 @@
 .about-me {
   width: 100%;
-  height: 70vh;
+  margin-bottom: 50px;
+  overflow-x: hidden;
+  min-height: 50vh;
 
   .left-panel {
     padding-top: 20px;
     width: 100%;
-    height: 70vh;
-    font-family: "Raleway";
+    font-family: "Roboto";
+    display: flex;
+    .title {
+      font-size: 25pt;
+      margin-bottom: 0;
+    }
+    .sub-title {
+      font-size: 19pt;
+      margin-bottom: 0;
+    }
   }
   .right-panel {
     padding-top: 20px;
     width: 100%;
-    height: 70vh;
-  }
-  .title {
-    font-size: 25pt;
-    margin-bottom: 0;
-  }
-  .semi-title {
-    font-size: 20pt;
-  }
-  .info {
-    .hours {
-      display: inline-block;
-      margin-left: 10px;
-
-      .svg {
-        display: inline-block;
-        margin-right: 10px;
+    height: 100%;
+    position: relative;
+    .map {
+      iframe {
+        float: right;
       }
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    .hours {
+      display: flex;
+      text-decoration: none;
+      ul {
+        padding: 0;
+        list-style-type: none;
+      }
+    }
+
+    .address {
+      display: flex;
+    }
+    span {
+      margin-left: 10px;
+      display: inline-block;
+    }
+    .phone {
+      display: flex;
     }
   }
 }
