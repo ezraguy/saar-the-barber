@@ -2,21 +2,21 @@
   display: flex;
   background-color: rgba(203, 203, 203, 0.886);
   flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  min-height: 50vh;
+  align-items: center;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+
   .title {
     text-align: center;
     font-size: 40pt;
     font-family: "Special Elite";
   }
-  .posts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  .row {
     .post {
-      padding-left: 20px;
-      padding-right: 20px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
     }
   }
 }

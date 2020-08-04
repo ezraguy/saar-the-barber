@@ -3,13 +3,21 @@
   width: 100%;
   height: 100vh;
   margin: 0;
+  position: relative;
   background-color: #29292e;
   display: flex;
   color: rgb(225, 224, 224);
-  justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
-
+  .icons {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    svg {
+      fill: white;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
   .main {
     text-align: center;
     .content {
@@ -19,11 +27,9 @@
       .logo {
         width: 100%;
         max-width: 450px;
-        height: auto;
       }
     }
     .textUnderImg {
-      padding-top: 5px;
       font-size: 28pt;
       font-family: "Special Elite";
     }
@@ -44,7 +50,6 @@
       border: none;
       svg {
         opacity: 0;
-
         transition: 0.5s ease;
         position: absolute;
         right: 10px;
@@ -62,16 +67,6 @@
           transform: translateX(5px);
         }
       }
-    }
-  }
-  .icons {
-    position: absolute;
-    right: 2%;
-    bottom: 2%;
-    svg {
-      fill: white;
-      width: 30px;
-      cursor: pointer;
     }
   }
 }

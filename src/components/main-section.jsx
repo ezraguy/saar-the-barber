@@ -17,12 +17,16 @@ const Main = () => {
   };
   return (
     <div id="home" className="container-fluid  p-0 mainWrap">
+      <div className="icons">
+        <InstaSvg onClick={() => goToSocial("insta")} className="mr-2" />
+        <MapsSvg onClick={() => goToSocial("google")} />
+      </div>
       <div className="main container">
         <div data-aos="fade-down" data-aos-delay="100" className="content">
           <img src={logo} className="logo" alt="logo" />
         </div>
         <p data-aos="fade-down" data-aos-delay="200" className="textUnderImg">
-          Saar Tal,
+          Saar Tal
         </p>
         <p data-aos="fade-down" data-aos-delay="300" className="textUnderImg">
           Your next barber.
@@ -50,10 +54,6 @@ const Main = () => {
             <polyline points="12 5 19 12 12 19"></polyline>
           </svg>
         </button>
-      </div>
-      <div className="icons">
-        <InstaSvg onClick={() => goToSocial("insta")} className="mr-2" />
-        <MapsSvg onClick={() => goToSocial("google")} />
       </div>
     </div>
   );
