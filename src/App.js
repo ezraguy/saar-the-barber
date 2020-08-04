@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AboutMe from './components/about-me';
 import Gallery from './components/gallery';
+import Reviews from './components/reviews';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Main />
       <Gallery />
       <AboutMe />
+      <Reviews />
     </div>
   );
 }

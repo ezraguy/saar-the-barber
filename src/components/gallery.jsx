@@ -10,6 +10,7 @@ const Gallery = () => {
         <div className="row justify-content-center">
           <div
             data-aos="fade-down"
+            data-aos-delay="100"
             className="post col-xl-3 col-lg-5 col-md-5 col-sm-10 col-xs-12"
           >
             <InstagramEmbed
@@ -18,15 +19,12 @@ const Gallery = () => {
               hideCaption={true}
               protocol=""
               injectScript
-              onLoading={() => {}}
-              onSuccess={() => {}}
-              onAfterRender={() => {}}
-              onFailure={() => {}}
             />
           </div>
 
           <div
             data-aos="fade-down"
+            data-aos-delay="200"
             className="post col-xl-3 col-lg-5 col-md-5 col-sm-10"
           >
             <InstagramEmbed
@@ -35,15 +33,12 @@ const Gallery = () => {
               hideCaption={true}
               protocol=""
               injectScript
-              onLoading={() => {}}
-              onSuccess={() => {}}
-              onAfterRender={() => {}}
-              onFailure={() => {}}
             />
           </div>
 
           <div
             data-aos="fade-down"
+            data-aos-delay="300"
             className="post col-xl-3 col-lg-5 col-md-5 col-sm-10 "
           >
             <InstagramEmbed
@@ -52,15 +47,12 @@ const Gallery = () => {
               hideCaption={true}
               protocol=""
               injectScript
-              onLoading={() => {}}
-              onSuccess={() => {}}
-              onAfterRender={() => {}}
-              onFailure={() => {}}
             />
           </div>
 
           <div
             data-aos="fade-down"
+            data-aos-delay="400"
             className="post col-xl-3 col-lg-5 col-md-5 col-sm-10 "
           >
             <InstagramEmbed
@@ -69,10 +61,6 @@ const Gallery = () => {
               hideCaption={true}
               protocol=""
               injectScript
-              onLoading={() => {}}
-              onSuccess={() => {}}
-              onAfterRender={() => {}}
-              onFailure={() => {}}
             />
           </div>
         </div>
