@@ -10,7 +10,7 @@ import Reviews from './components/reviews';
 
 
 function App() {
-  AOS.init();
+  AOS.init({ offset: 300, });
   return (
     <div className="App">
       <Header />

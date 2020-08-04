@@ -6,12 +6,7 @@ const BookButton = () => {
       "https://calendar.plannie.co.il/?name=saarthebarber&self=true#!/";
   };
   return (
-    <button
-      onClick={handleAppClick}
-      data-aos="fade-down"
-      className="btn scheduleApp"
-      data-aos-delay="400"
-    >
+    <button onClick={handleAppClick} className="btn scheduleApp">
       <span>Schedule Appointment</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"

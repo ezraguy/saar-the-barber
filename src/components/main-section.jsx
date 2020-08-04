@@ -21,15 +21,11 @@ const Main = () => {
         <MapsSvg onClick={() => goToSocial("google")} />
       </div>
       <div className="main container">
-        <div data-aos="fade-down" data-aos-delay="100" className="content">
+        <div className="content">
           <img src={logo} className="logo" alt="logo" />
         </div>
-        <p data-aos="fade-down" data-aos-delay="200" className="textUnderImg">
-          Saar Tal
-        </p>
-        <p data-aos="fade-down" data-aos-delay="300" className="textUnderImg">
-          Your next barber.
-        </p>
+        <p className="textUnderImg">Saar Tal</p>
+        <p className="textUnderImg">Your next barber.</p>
         <BookButton />
       </div>
     </div>
