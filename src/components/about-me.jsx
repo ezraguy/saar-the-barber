@@ -13,8 +13,8 @@ const AboutMe = () => {
           <div className="map container">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3379.017612591515!2d34.82635138449781!3d32.122826624358595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4929572d0da3%3A0x7e0f7b453972932d!2sSaar%20the%20barber!5e0!3m2!1siw!2sil!4v1596541789336!5m2!1siw!2sil"
-              width="600"
-              height="450"
+              width="500"
+              height="350"
               frameBorder="0"
               title="barbershop"
               allowFullScreen={false}
@@ -25,23 +25,31 @@ const AboutMe = () => {
         </div>
         <div className="container left-panel col-12 col-lg-6 ">
           <div className="info">
-            <p className="title">Good to know</p>
-            <p className="sub-title">Some info:</p>
+            <p className="title">Some info:</p>
 
             <div className="hours" data-aos="fade-right">
               <ClockSvg className="mb-4 svg" />
               <ul>
+                <div></div>
                 <li>
-                  <span>Sunday: 9am-3:30pm</span>
+                  <span>
+                    <b>Sunday</b>: 9:00-15:30
+                  </span>
                 </li>
                 <li>
-                  <span>Monday - Thursday: 9am-8pm</span>
+                  <span>
+                    <b>Monday - Thursday</b>: 9:00-20:00
+                  </span>
                 </li>
                 <li>
-                  <span>Friday: 9am-3pm</span>
+                  <span>
+                    <b>Friday</b>: 9:00-15:00
+                  </span>
                 </li>
                 <li>
-                  <span>Saturday: Closed</span>
+                  <span>
+                    <b>Saturday</b>: Closed
+                  </span>
                 </li>
               </ul>
             </div>
@@ -53,8 +61,8 @@ const AboutMe = () => {
               <PhoneSvg className="mb-4" />
               <span>0548181959</span>
               <br />
-              <BookButton />
             </div>
+            <BookButton />
           </div>
         </div>
       </div>

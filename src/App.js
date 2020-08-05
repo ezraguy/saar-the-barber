@@ -2,23 +2,24 @@ import React from 'react';
 import './App.css';
 import Main from './components/main-section';
 import Header from './components/header';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AboutMe from './components/about-me';
 import Gallery from './components/gallery';
 import Reviews from './components/reviews';
+import Aos from "aos";
 
 
 function App() {
-  AOS.init({ offset: 300, });
+  Aos.init({ mirror: false, });
+
   return (
     <div className="App">
       <Header />
 
       <Main />
-      <Gallery />
       <AboutMe />
       <Reviews />
+      <Gallery />
     </div>
   );
 }

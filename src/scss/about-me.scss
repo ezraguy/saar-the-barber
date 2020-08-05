@@ -1,17 +1,17 @@
 .about-me {
   width: 100%;
-
+  padding-bottom: 20px;
+  padding-top: 20px;
   overflow-x: hidden;
-  color: white;
-  fill: white;
-  background-image: url(../images/textur.jpg);
+  color: black;
+  fill: black;
   background-position: bottom;
   min-height: 60vh;
 
   .left-panel {
     padding-top: 20px;
 
-    font-family: "Roboto";
+    font-family: "Raleway";
     display: flex;
     .title {
       font-size: 25pt;
@@ -54,6 +54,7 @@
       display: inline-block;
     }
     .phone {
+      display: flex;
     }
   }
 }
