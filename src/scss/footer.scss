@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  min-height: 25vh;
+  flex-direction: row;
+  position: sticky;
+  background-color: black;
+  color: gray !important;
+
+  .contnet {
+    display: flex;
+    flex-direction: column;
+
+    #mainTitle {
+      font-family: "RaleWay";
+      color: white;
+      font-size: 30pt;
+    }
+  }
+  .explore {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    a {
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: gray !important;
+    }
+  }
+  .title {
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-family: "RaleWay";
+    color: white;
+    font-size: 15pt;
+  }
+
+  .footer-sub-title {
+    font-style: italic;
+    font-family: 16pt;
+  }
+
+  .lets-talk {
+    span {
+      color: white;
+      display: inline;
+    }
+    .phone-svg {
+      display: inline;
+      fill: white;
+    }
+  }
+}

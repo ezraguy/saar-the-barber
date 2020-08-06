@@ -7,6 +7,7 @@ import AboutMe from './components/about-me';
 import Gallery from './components/gallery';
 import Reviews from './components/reviews';
 import Aos from "aos";
+import Footer from './components/footer';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <AboutMe />
       <Reviews />
       <Gallery />
+      <Footer />
     </div>
   );
 }
