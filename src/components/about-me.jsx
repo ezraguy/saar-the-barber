@@ -3,7 +3,7 @@ import "../scss/about-me.scss";
 import { ReactComponent as PhoneSvg } from "../svg/phone.svg";
 import { ReactComponent as AddressSvg } from "../svg/address.svg";
 import { ReactComponent as ClockSvg } from "../svg/clock.svg";
-import BookButton from "./book-appointment";
+import MainButton from "./main-button";
 
 const AboutMe = () => {
   return (
@@ -62,7 +62,10 @@ const AboutMe = () => {
               <span>0548181959</span>
               <br />
             </div>
-            <BookButton />
+            <MainButton
+              text="schedule appointment"
+              location="https://calendar.plannie.co.il/?name=saarthebarber&self=true#!/"
+            />
           </div>
         </div>
       </div>

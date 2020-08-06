@@ -17,6 +17,7 @@
     display: flex;
 
     .title {
+      text-align: center;
       display: flex;
       justify-content: center;
       font-size: 30pt;
@@ -30,6 +31,7 @@
   }
   .carousel {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: inherit;
@@ -38,5 +40,25 @@
   }
   .carousel-control-next-icon {
     color: white;
+  }
+
+  .stars {
+    margin-bottom: 10px;
+    svg {
+      fill: #e0b75b;
+      stroke: #e0b75b;
+    }
+  }
+  .name {
+    font-style: italic;
+    margin-bottom: 50px;
+  }
+  .review-text {
+    word-break: words;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .write-review {
+    margin-top: 50px !important;
   }
 }

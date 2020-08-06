@@ -1,13 +1,12 @@
 import React from "react";
-import "../scss/book-appointment.scss";
-const BookButton = () => {
+import "../scss/main-button.scss";
+const BookButton = ({ text, location }) => {
   const handleAppClick = () => {
-    window.location =
-      "https://calendar.plannie.co.il/?name=saarthebarber&self=true#!/";
+    window.location = location;
   };
   return (
     <button onClick={handleAppClick} className="btn scheduleApp">
-      <span>Schedule Appointment</span>
+      <span>{text}</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"

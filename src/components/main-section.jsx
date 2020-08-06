@@ -4,7 +4,7 @@ import logo from "../images/logo.png";
 import background from "../images/main-background.jpg";
 import { ReactComponent as InstaSvg } from "../svg/instagram.svg";
 import { ReactComponent as MapsSvg } from "../svg/maps.svg";
-import BookButton from "./book-appointment";
+import MainButton from "./main-button";
 
 const Main = () => {
   const goToSocial = (platform) => {
@@ -26,7 +26,10 @@ const Main = () => {
         </div>
         <p className="textUnderImg">Saar Tal</p>
         <p className="textUnderImg">Your next barber.</p>
-        <BookButton />
+        <MainButton
+          text="schedule appointment"
+          location="https://calendar.plannie.co.il/?name=saarthebarber&self=true#!/"
+        />
       </div>
     </div>
   );
