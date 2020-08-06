@@ -1,4 +1,5 @@
 .footer {
+  padding-bottom: 40px;
   display: flex;
   min-height: 25vh;
   flex-direction: row;
@@ -12,8 +13,9 @@
 
     #mainTitle {
       font-family: "RaleWay";
+      margin-right: 40px;
       color: white;
-      font-size: 30pt;
+      font-size: 25pt;
     }
   }
   .explore {
@@ -48,5 +50,8 @@
       display: inline;
       fill: white;
     }
+  }
+  .gold {
+    color: #dec68d;
   }
 }
