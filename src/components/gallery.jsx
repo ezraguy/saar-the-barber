@@ -4,7 +4,7 @@ import InstagramEmbed from "react-instagram-embed";
 
 const Gallery = () => {
   return (
-    <div className="contaniner-fluid gallery">
+    <div id="gallery" className="contaniner-fluid gallery">
       <p className="title">Check us out on insatgram</p>
       <div className="container-fluid">
         <div className="row justify-content-center">

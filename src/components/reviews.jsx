@@ -35,7 +35,7 @@ const Reviews = () => {
     },
   ]);
   return (
-    <div className="reviews container-fluid">
+    <div id="reviews" className="reviews container-fluid">
       <img src={background} className="background" alt="" />
       <div className="reviews-content container-fluid">
         <div className="title container">
