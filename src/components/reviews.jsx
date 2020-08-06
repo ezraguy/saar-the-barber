@@ -8,11 +8,10 @@ const Reviews = () => {
   const [reviews] = useState([
     {
       id: 1,
-      text: `Looked for a good barber in close vicinity to my home. I found Saar, and I'm glad did!
-      Aside for being a professional in his field, he also a fantastic person! It's fun to come and get a good haircut and get your beard trimmed. Cool and relaxed vibes along with an ice cold beer, that's what you get here. Very recommended, now it's my usual place.`,
+      text: `Highly talented barber, professional and dedicated.`,
       stars: [1, 2, 3, 5, 4],
       dir: "ltr",
-      name: "Hanan Mishurin",
+      name: "Eliran Elnasi",
       className: "carousel-item active",
     },
     {
@@ -63,10 +62,10 @@ const Reviews = () => {
                       className="review-text"
                       style={{ direction: review.dir }}
                     >
-                      <p>{review.text}</p>
+                      <p className="mb-2">{review.text}</p>
                     </div>
-
-                    <div className="name">{review.name}</div>
+                    <br />
+                    <div className="name mt-2">{review.name}</div>
                   </div>
                 );
               })}

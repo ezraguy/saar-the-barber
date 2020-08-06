@@ -19,7 +19,7 @@ const Gallery = () => {
             return (
               <div
                 key={post.id}
-                data-aos="fade-up"
+                data-aos="fade-down"
                 data-aos-delay={post.delay}
                 className="post col-xl-3 col-lg-5 col-md-5 col-sm-10 col-xs-12"
               >
