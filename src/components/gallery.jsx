@@ -1,72 +1,39 @@
 import React from "react";
 import "../scss/gallery.scss";
 import InstagramEmbed from "react-instagram-embed";
+import { useState } from "react";
 
 const Gallery = () => {
+  let [posts] = useState([
+    { id: 1, url: "https://www.instagram.com/p/CDd46zxAd5X/", delay: "100" },
+    { id: 2, url: "https://www.instagram.com/p/CC6aHzVAkr7/", delay: "200" },
+    { id: 3, url: "https://www.instagram.com/p/CA5VTDEAhLF/", delay: "300" },
+    { id: 4, url: "https://www.instagram.com/p/CCY9UypguTI/", delay: "400" },
+  ]);
   return (
     <div id="gallery" className="contaniner-fluid gallery">
       <p className="title">Check us out on insatgram</p>
       <div className="container-fluid">
         <div className="row justify-content-center">
-          <div
-            data-aos="fade-up"
-            data-aos-delay="100"
-            className="post col-xl-3 col-lg-5 col-md-5 col-sm-10 col-xs-12"
-          >
-            <InstagramEmbed
-              url="https://www.instagram.com/p/CDd46zxAd5X/?utm_source=ig_web_copy_link"
-              maxWidth={320}
-              hideCaption={true}
-              protocol=""
-              containerTagName="div"
-              injectScript
-            />
-          </div>
-
-          <div
-            data-aos="fade-up"
-            data-aos-delay="200"
-            className="post col-xl-3 col-lg-5 col-md-5 col-sm-10"
-          >
-            <InstagramEmbed
-              url="https://www.instagram.com/p/CC6aHzVAkr7/?utm_source=ig_web_copy_link"
-              maxWidth={320}
-              hideCaption={true}
-              containerTagName="div"
-              protocol=""
-              injectScript
-            />
-          </div>
-
-          <div
-            data-aos="fade-up"
-            data-aos-delay="300"
-            className="post col-xl-3 col-lg-5 col-md-5 col-sm-10 "
-          >
-            <InstagramEmbed
-              url="https://www.instagram.com/p/CA5VTDEAhLF/?utm_source=ig_web_copy_link"
-              maxWidth={320}
-              hideCaption={true}
-              containerTagName="div"
-              protocol=""
-              injectScript
-            />
-          </div>
-
-          <div
-            data-aos="fade-up"
-            data-aos-delay="400"
-            className="post col-xl-3 col-lg-5 col-md-5 col-sm-10 "
-          >
-            <InstagramEmbed
-              url="https://www.instagram.com/p/CCY9UypguTI/?utm_source=ig_web_copy_link"
-              maxWidth={320}
-              hideCaption={true}
-              containerTagName="div"
-              protocol=""
-              injectScript
-            />
-          </div>
+          {posts.map((post) => {
+            return (
+              <div
+                key={post.id}
+                data-aos="fade-up"
+                data-aos-delay={post.delay}
+                className="post col-xl-3 col-lg-5 col-md-5 col-sm-10 col-xs-12"
+              >
+                <InstagramEmbed
+                  url={post.url}
+                  maxWidth={320}
+                  hideCaption={true}
+                  protocol=""
+                  containerTagName="div"
+                  injectScript
+                />
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
