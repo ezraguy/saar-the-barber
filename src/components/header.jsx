@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <>
       <nav className={headerClass}>
-        <p className="navbar-brand">SAAR TAL</p>
+        <p className="navbar-brand">SAAR THE BARBER</p>
         <button
           onClick={() => handleSideNav("open")}
           className="navbar-toggler"
