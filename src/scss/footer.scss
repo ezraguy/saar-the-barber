@@ -42,9 +42,11 @@
   }
 
   .lets-talk {
-    span {
-      color: white;
+    a {
       display: inline;
+      &:hover {
+        text-decoration: none;
+      }
     }
     .phone-svg {
       display: inline;

@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="lets-talk col-lg-4 col-xl-4 col-12">
           <div className="title">LET'S TALK</div>
           <PhoneSvg className="phone-svg" />
-          <span>0548181959</span>
+          <a href="tel:0548181959">0548181959</a>
         </div>
       </div>
     </div>
