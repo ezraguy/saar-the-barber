@@ -61,7 +61,7 @@ const Header = () => {
             </li>
             <li className="nav-item middleLink">
               <a className="nav-link" href="#aboutMe" onClick={handleSideNav}>
-                ABOUT US
+                ABOUT ME
               </a>
             </li>
             <li className="nav-item">
