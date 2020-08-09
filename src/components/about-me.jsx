@@ -59,7 +59,7 @@ const AboutMe = () => {
             </div>
             <div className="phone" data-aos="fade-right">
               <PhoneSvg className="mb-4" />
-              <a href="tel:0548181959">0548181959</a>
+              <a href="tel:0548181959" className="pl-2">0548181959</a>
               <br />
             </div>
             <MainButton
