@@ -38,7 +38,7 @@ const Reviews = () => {
       <img src={background} className="background" alt="" />
       <div className="reviews-content container-fluid">
         <div className="title container">
-          <p>What customers say about us</p>
+          <p>What customers say about me</p>
         </div>
       </div>
 

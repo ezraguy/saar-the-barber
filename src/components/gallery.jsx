@@ -12,7 +12,7 @@ const Gallery = () => {
   ]);
   return (
     <div id="gallery" className="contaniner-fluid gallery">
-      <p className="title">Check us out on insatgram</p>
+      <p className="title">Check me out on insatgram</p>
       <div className="container-fluid">
         <div className="row justify-content-center">
           {posts.map((post) => {
