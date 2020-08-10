@@ -7,7 +7,7 @@ const Header = ({ he }) => {
   let [headerClass, setHeaderClass] = useState(
     "navbar navbar-expand-lg navbar-dark  header "
   );
-  let [navClass, setNavClass] = useState("navbar-nav animate__backInDown");
+  let [navClass, setNavClass] = useState("navbar-nav flex-row animate__backInDown ");
   const sideNav = useRef();
 
   const handleSideNav = (action) => {
@@ -38,7 +38,7 @@ const Header = ({ he }) => {
   });
   return (
     <>
-      <nav className={headerClass} style={{}}>
+      <nav className={headerClass} >
         <p className="navbar-brand">SAAR THE BARBER</p>
         <button
           onClick={() => handleSideNav("open")}
@@ -50,12 +50,13 @@ const Header = ({ he }) => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse  " id="navbarNav" ref={sideNav}>
-          <ul className={navClass}>
+        <div className="collapse navbar-collapse" id="navbarNav" ref={sideNav}>
+
+          <ul className={he ? navClass : 'navbar-nav flex-row-reverse animate__backInDown '}>
             <span className="x-button" onClick={handleSideNav}>
               X
             </span>
-            <li className={he ? "nav-item order-3" : "nav-item order-0"} >
+            <li className="nav-item order-3" >
 
               <a className="nav-link" href="#home" onClick={handleSideNav}>
                 {he && <span>דף הבית</span>}
@@ -63,19 +64,19 @@ const Header = ({ he }) => {
 
               </a>
             </li>
-            <li className={he ? "nav-item order-2" : "nav-item order-1"}>
+            <li className="nav-item order-2">
               <a className="nav-link" href="#aboutMe" onClick={handleSideNav}>
                 {he && <span>קצת עלי</span>}
                 {!he && <span>ABOUT</span>}
               </a>
             </li>
-            <li className={he ? "nav-item order-1" : "nav-item order-2"}>
+            <li className="nav-item order-1">
               <a className="nav-link" href="#reviews" onClick={handleSideNav}>
                 {he && <span>ביקורות</span>}
                 {!he && <span>REVIEWS</span>}
               </a>
             </li>
-            <li className={he ? "nav-item order-0" : "nav-item order-3"}>
+            <li className="nav-item order-0">
               <a className="nav-link" href="#gallery" onClick={handleSideNav}>
                 {he && <span>גלריה</span>}
                 {!he && <span>GALLERY</span>}
