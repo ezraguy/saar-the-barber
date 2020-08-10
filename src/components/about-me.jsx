@@ -61,7 +61,7 @@ const AboutMe = ({ he }) => {
             </div>
             <div className="address" data-aos="fade-right">
               <AddressSvg className="mb-4 svg" />
-              <span>{he ? 'בני אפרים 280, תל אביב יפו' : 'Bnei Ephraim St 280, Tel Aviv-Yafo'}</span>
+              <span>{he ? 'בני אפרים 280, תל אביב יפו.' : 'Bnei Ephraim St 280, Tel Aviv-Yafo'}</span>
             </div>
             <div className="phone" data-aos="fade-right">
               <PhoneSvg className="mb-4" />

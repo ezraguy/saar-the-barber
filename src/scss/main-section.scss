@@ -40,11 +40,21 @@ $title-font :'Special Elite';
       }
     }
     .textUnderImg {
-      font-size: 28pt;
+      font-size: 22pt;
       font-family: $title-font ;
     }
     p {
       margin-bottom: 0;
     }
   }
+}
+
+@media screen and (max-width: 600px) {
+  
+    .textUnderImg {
+      
+      font-size:16pt !important ;
+      font-family: $title-font ;
+    };
+  
 }

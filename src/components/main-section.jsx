@@ -27,7 +27,7 @@ const Main = ({ he }) => {
         {he &&
           <div className="rtl">
             <p className="textUnderImg rtl">סער טל</p>
-            <p className="textUnderImg rtl">הספר הבא שלך.</p>
+            <p className="textUnderImg rtl mx-2">הספר לאנשים שאוהבים את עצמם.</p>
           </div>}
         {!he && <div className="">
           <p className="textUnderImg">Saar Tal</p>

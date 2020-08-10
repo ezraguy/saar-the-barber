@@ -15,26 +15,26 @@ body {
   z-index: 301;
   position: absolute;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 65px;
+  height: 30px;
 }
 
 .switch input { 
   opacity: 0;
   width: 0;
   height: 0;
-  
 }
 
-.slider {
-  
+.slider { 
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: transparent;
+  border: #f0c768 2px solid;
+  color: white;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -44,10 +44,9 @@ body {
   content: "";
   height: 26px;
   width: 26px;
-  left: 4px;
-  bottom: 4px;
-  
-  background-color: white;
+  left:0px;
+  bottom: 0px;
+  background-color: #f2c96a;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -55,17 +54,24 @@ body {
 
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(35px);
+  -ms-transform: translateX(35px);
+  transform: translateX(35px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
-  padding-top: 4px;
-  padding-left: 6px;
-  color: black;
+  border-radius: 30px;
+  padding-top: 2px;
+  padding-left: 4px;
+  color: white;
+  
+}
+.slider.round :nth-child(1)  {
+ 
+ margin-right: 7px;
+ font-size: 12pt;
+  
 }
 
 

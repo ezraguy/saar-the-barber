@@ -3,7 +3,7 @@ import "../scss/gallery.scss";
 import InstagramEmbed from "react-instagram-embed";
 import { useState } from "react";
 
-const Gallery = () => {
+const Gallery = ({ he }) => {
   let [posts] = useState([
     { id: 1, url: "https://www.instagram.com/p/CDd46zxAd5X/", delay: "100" },
     { id: 2, url: "https://www.instagram.com/p/CC6aHzVAkr7/", delay: "200" },
@@ -12,7 +12,8 @@ const Gallery = () => {
   ]);
   return (
     <div id="gallery" className="contaniner-fluid gallery">
-      <p className="title">Check me out on insatgram</p>
+      <p className="title">{he ? 'בואו לעקוב אחרי באינסטגרם' : 'Check me out on Insatgram'}</p>
+
       <div className="container-fluid">
         <div className="row justify-content-center">
           {posts.map((post) => {

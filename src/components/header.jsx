@@ -5,7 +5,7 @@ import "animate.css";
 const Header = ({ he }) => {
 
   let [headerClass, setHeaderClass] = useState(
-    "navbar navbar-expand-lg navbar-dark  header"
+    "navbar navbar-expand-lg navbar-dark  header "
   );
   let [navClass, setNavClass] = useState("navbar-nav animate__backInDown");
   const sideNav = useRef();
@@ -50,12 +50,12 @@ const Header = ({ he }) => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse " id="navbarNav" ref={sideNav}>
+        <div className="collapse navbar-collapse  " id="navbarNav" ref={sideNav}>
           <ul className={navClass}>
             <span className="x-button" onClick={handleSideNav}>
               X
             </span>
-            <li className="nav-item">
+            <li className={he ? "nav-item order-3" : "nav-item order-0"} >
 
               <a className="nav-link" href="#home" onClick={handleSideNav}>
                 {he && <span>דף הבית</span>}
@@ -63,19 +63,19 @@ const Header = ({ he }) => {
 
               </a>
             </li>
-            <li className="nav-item middleLink">
+            <li className={he ? "nav-item order-2" : "nav-item order-1"}>
               <a className="nav-link" href="#aboutMe" onClick={handleSideNav}>
                 {he && <span>קצת עלי</span>}
                 {!he && <span>ABOUT</span>}
               </a>
             </li>
-            <li className="nav-item">
+            <li className={he ? "nav-item order-1" : "nav-item order-2"}>
               <a className="nav-link" href="#reviews" onClick={handleSideNav}>
                 {he && <span>ביקורות</span>}
                 {!he && <span>REVIEWS</span>}
               </a>
             </li>
-            <li className="nav-item">
+            <li className={he ? "nav-item order-0" : "nav-item order-3"}>
               <a className="nav-link" href="#gallery" onClick={handleSideNav}>
                 {he && <span>גלריה</span>}
                 {!he && <span>GALLERY</span>}

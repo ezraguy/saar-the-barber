@@ -11,7 +11,7 @@ import Footer from './components/footer';
 
 
 function App() {
-  Aos.init({ mirror: false, });
+  Aos.init();
 
   let [he, setlang] = useState(true)
   const changeLang = () => {
@@ -23,7 +23,7 @@ function App() {
       <label class="switch">
 
         <input type="checkbox" onChange={changeLang} />
-        <span class="slider round">EN  HE</span>
+        <div class="slider round"><span> EN </span>   <span> HE </span></div>
 
 
       </label>

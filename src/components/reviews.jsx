@@ -4,31 +4,29 @@ import MainButton from "./main-button";
 import background from "../images/reviews-background.jpg";
 import { ReactComponent as Star } from "../svg/star.svg";
 import { useState } from "react";
-const Reviews = () => {
+const Reviews = ({ he }) => {
   const [reviews] = useState([
     {
       id: 1,
-      text: `Highly talented barber, professional and dedicated.`,
+      enText: 'Highly talented barber, professional and dedicated.',
+      heText: '.ספר מוכשר מאוד, מקצועי ומסור',
       stars: [1, 2, 3, 5, 4],
-      dir: "ltr",
       name: "Eliran Elnasi",
       className: "carousel-item active",
     },
     {
       id: 2,
-      text: `You can now call this barber your new best friend. Thank you Saar for the haircut!! Fantastic treatment and lovely place.`,
+      enText: 'You can now call this barber your new best friend. Thank you Saar for the haircut!! Fantastic treatment and lovely place.',
+      heText: 'אתם יכולים לקרוא לספר הזה החבר הכי טוב שלכם. תודה לך סער על התספורת!! טיפול נהדר ומקום מקסים',
       stars: [1, 2, 3, 4, 5],
-      dir: "ltr",
       name: "Ron Erlichman",
       className: "carousel-item",
     },
     {
       id: 3,
-      text: `
-      אחד הספרים התותחים שנתקלתי בהם אחרי שנים של חיפושים. יודע ישר להתאים לי את מה שאני רוצה. באמת מקצוען אמיתי ואני שמח שפגשתי אותו.
-      `,
+      heText: 'אחד הספרים התותחים שנתקלתי בהם אחרי שנים של חיפושים. יודע ישר להתאים לי את מה שאני רוצה. באמת מקצוען אמיתי ואני שמח שפגשתי אותו',
+      enText: `One of the best barbers I have ever met after years of search. knows how to suit me what I want. A true professional and I'm so happy I found him .`,
       stars: [1, 2, 3, 4, 5],
-      dir: "rtl",
       name: "reshef Halperin",
       className: "carousel-item",
     },
@@ -38,7 +36,7 @@ const Reviews = () => {
       <img src={background} className="background" alt="" />
       <div className="reviews-content container-fluid">
         <div className="title container">
-          <p>What customers say about me</p>
+          <p>{he ? 'מה לקוחות חושבים עלי' : 'What customers say about me'}</p>
         </div>
       </div>
 
@@ -59,10 +57,10 @@ const Reviews = () => {
                       })}
                     </div>
                     <div
-                      className="review-text"
-                      style={{ direction: review.dir }}
+                      className="review-text d-flex justify-content-center"
+
                     >
-                      <p className="mb-2">{review.text}</p>
+                      <p className={he ? "mb-2 text-right" : "mb-2 text-left"}>{he ? review.heText : review.enText}</p>
                     </div>
                     <br />
                     <div className="name mt-2">{review.name}</div>
@@ -97,7 +95,7 @@ const Reviews = () => {
           </a>
           <MainButton
             className="write-review"
-            text="Write a review"
+            text={he ? 'כתוב ביקורת' : "Write a review"}
             location="https://g.page/saarthebarber/review?gm"
           />
         </div>
