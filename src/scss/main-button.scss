@@ -1,4 +1,47 @@
-.scheduleApp {
+.scheduleAppHE {
+  min-width: 250px;
+  font-family: "Roboto";
+  border-radius: 7px;
+  background-color: transparent;
+  color: #ffffff;
+  transition: 0.7s ease;
+  background-color: #d8b259cb;
+  text-transform: uppercase;
+  position: relative;
+  border: none;
+  svg {
+    opacity: 0;
+    display: inline-block;
+    transition: 0.5s ease;
+    position: absolute;
+    left: 15px;
+    transform: rotate(180deg);
+    stroke: white;
+    
+  }
+  span {
+    display: inline-block;
+    transition: 0.5s ease;
+  }
+  &:hover {
+    span {
+      color: white;
+      transform: translateX(5px);
+    }
+    svg {
+      stroke: white;
+      opacity: 1;
+      transform: translateX(-5px) rotate(180deg);
+     
+     
+    }
+  }
+}
+
+
+
+
+.scheduleAppEN {
   min-width: 250px;
   font-family: "Roboto";
   border-radius: 7px;

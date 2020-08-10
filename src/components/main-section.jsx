@@ -36,6 +36,7 @@ const Main = ({ he }) => {
 
 
         <MainButton
+          he={he}
           text={he ? "קביעת פגישה" : 'schedule appointment'}
           location="https://calendar.plannie.co.il/?name=saarthebarber&self=true#!/"
         />

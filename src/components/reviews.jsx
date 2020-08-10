@@ -94,6 +94,7 @@ const Reviews = ({ he }) => {
             <span className="sr-only">Next</span>
           </a>
           <MainButton
+            he={he}
             className="write-review"
             text={he ? 'כתוב ביקורת' : "Write a review"}
             location="https://g.page/saarthebarber/review?gm"
