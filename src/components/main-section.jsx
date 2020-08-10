@@ -6,7 +6,7 @@ import { ReactComponent as InstaSvg } from "../svg/instagram.svg";
 import { ReactComponent as MapsSvg } from "../svg/maps.svg";
 import MainButton from "./main-button";
 
-const Main = () => {
+const Main = ({ he }) => {
   const goToSocial = (platform) => {
     if (platform === "insta")
       window.location = "https://www.instagram.com/saarthebarber/";
@@ -24,10 +24,19 @@ const Main = () => {
         <div className="content">
           <img src={logo} className="logo" alt="logo" />
         </div>
-        <p className="textUnderImg">Saar Tal</p>
-        <p className="textUnderImg">Your next barber.</p>
+        {he &&
+          <div className="rtl">
+            <p className="textUnderImg rtl">סער טל</p>
+            <p className="textUnderImg rtl">הספר הבא שלך.</p>
+          </div>}
+        {!he && <div className="">
+          <p className="textUnderImg">Saar Tal</p>
+          <p className="textUnderImg">Your next barber.</p>
+        </div>}
+
+
         <MainButton
-          text="schedule appointment"
+          text={he ? "קביעת פגישה" : 'schedule appointment'}
           location="https://calendar.plannie.co.il/?name=saarthebarber&self=true#!/"
         />
       </div>

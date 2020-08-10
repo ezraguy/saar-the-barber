@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from "react";
 import "../scss/header.scss";
 import { useState } from "react";
 import "animate.css";
-const Header = () => {
+const Header = ({ he }) => {
+
   let [headerClass, setHeaderClass] = useState(
     "navbar navbar-expand-lg navbar-dark  header"
   );
@@ -37,7 +38,7 @@ const Header = () => {
   });
   return (
     <>
-      <nav className={headerClass}>
+      <nav className={headerClass} style={{}}>
         <p className="navbar-brand">SAAR THE BARBER</p>
         <button
           onClick={() => handleSideNav("open")}
@@ -55,23 +56,29 @@ const Header = () => {
               X
             </span>
             <li className="nav-item">
+
               <a className="nav-link" href="#home" onClick={handleSideNav}>
-                HOME
+                {he && <span>דף הבית</span>}
+                {!he && <span>HOME</span>}
+
               </a>
             </li>
             <li className="nav-item middleLink">
               <a className="nav-link" href="#aboutMe" onClick={handleSideNav}>
-                ABOUT ME
+                {he && <span>קצת עלי</span>}
+                {!he && <span>ABOUT</span>}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#reviews" onClick={handleSideNav}>
-                REVIEWS
+                {he && <span>ביקורות</span>}
+                {!he && <span>REVIEWS</span>}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#gallery" onClick={handleSideNav}>
-                GALLERY
+                {he && <span>גלריה</span>}
+                {!he && <span>GALLERY</span>}
               </a>
             </li>
           </ul>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Main from './components/main-section';
 import Header from './components/header';
@@ -13,15 +13,26 @@ import Footer from './components/footer';
 function App() {
   Aos.init({ mirror: false, });
 
+  let [he, setlang] = useState(true)
+  const changeLang = () => {
+    setlang(!he);
+  }
   return (
     <div className="App">
-      <Header />
 
-      <Main />
-      <AboutMe />
-      <Reviews />
-      <Gallery />
-      <Footer />
+      <label class="switch">
+
+        <input type="checkbox" onChange={changeLang} />
+        <span class="slider round">EN  HE</span>
+
+
+      </label>
+      <Header he={he} />
+      <Main he={he} />
+      <AboutMe he={he} />
+      <Reviews he={he} />
+      <Gallery he={he} />
+      <Footer he={he} />
     </div>
   );
 }
