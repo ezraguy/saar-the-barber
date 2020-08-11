@@ -1,5 +1,5 @@
+$text-font:'Rubik','Roboto', sans-serif;
 $title-font :'Special Elite';
-
 .reviews {
   width: 100%;
   height: 700px;
@@ -28,7 +28,7 @@ $title-font :'Special Elite';
       justify-content: center;
       font-size: 30pt;
       color: white;
-      font-family: $title-font ;
+      font-family: $text-font ;
       p {
         position: absolute;
         color: white;
@@ -61,8 +61,8 @@ $title-font :'Special Elite';
     margin-bottom: 50px;
   }
   .review-text {
-  
-  word-break: word;
+    font-family: $text-font;
+    word-break: word;
     padding-left: 20px;
     padding-right: 20px;
   }

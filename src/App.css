@@ -17,6 +17,7 @@ body {
   display: inline-block;
   width: 65px;
   height: 30px;
+  margin-right: 5px;
 }
 
 .switch input { 
@@ -62,8 +63,8 @@ input:checked + .slider:before {
 /* Rounded sliders */
 .slider.round {
   border-radius: 30px;
-  padding-top: 2px;
-  padding-left: 4px;
+  padding-top: 1px;
+  padding-left: 3px;
   color: white;
   
 }

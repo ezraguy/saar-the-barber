@@ -1,3 +1,5 @@
+$text-font:'Rubik','Roboto', sans-serif;
+$title-font :'Special Elite';
 .header {
   background-color: transparent !important;
   transition: 0.5s ease;
@@ -15,7 +17,7 @@
     margin-right: 5%;
     li {
       font-size: 13pt;
-      font-family: "Roboto";
+      font-family:$text-font;
       padding-right: 3rem;
       padding-left: 3rem;
     }
@@ -24,7 +26,7 @@
   .navbar-brand {
     
     font-weight: 600;
-    font-family: "Raleway";
+    font-family: $text-font;
   }
   .x-button {
     display: none;

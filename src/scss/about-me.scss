@@ -1,15 +1,18 @@
+$text-font:'Rubik','Roboto', sans-serif;
+$title-font :'Special Elite';
+
 .about-me {
   width: 100%;
   padding-top: 40px;
   overflow-x: hidden;
   min-height: 60vh;
- 
+  
   
   .left-panel {
     padding-top: 20px;
-    font-family: "Raleway";
     display: flex;
   
+    font-family: $text-font;
     .title {
       font-size: 25pt;
       margin-bottom: 0;

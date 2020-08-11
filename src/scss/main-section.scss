@@ -1,3 +1,4 @@
+$text-font:'Rubik','Roboto', sans-serif;
 $title-font :'Special Elite';
 
 .mainWrap {
@@ -25,6 +26,7 @@ $title-font :'Special Elite';
     }
   }
   .main {
+    font-family: $text-font;
     z-index: 100;
     text-align: center;
     position: absolute;
@@ -42,7 +44,7 @@ $title-font :'Special Elite';
     }
     .textUnderImg {
       font-size: 22pt;
-      font-family: $title-font ;
+      font-family: $title-font  ;
     }
     p {
       margin-bottom: 0;

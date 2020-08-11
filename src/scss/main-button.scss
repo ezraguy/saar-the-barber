@@ -1,6 +1,8 @@
+$text-font:'Rubik','Roboto', sans-serif;
+$title-font :'Special Elite';
 .scheduleAppHE {
   min-width: 250px;
-  font-family: "Roboto";
+  font-family: $text-font;
   border-radius: 7px;
   background-color: transparent;
   color: #ffffff;

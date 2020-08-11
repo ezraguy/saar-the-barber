@@ -1,7 +1,7 @@
 import React from "react";
 import "../scss/main-section.scss";
 import logo from "../images/logo.png";
-import background from "../images/main-background.jpg";
+import background from "../images/main-cover.jpeg";
 import { ReactComponent as InstaSvg } from "../svg/instagram.svg";
 import { ReactComponent as MapsSvg } from "../svg/maps.svg";
 import MainButton from "./main-button";

@@ -1,3 +1,5 @@
+$title-font :'Special Elite';
+$text-font:'Rubik','Roboto', sans-serif;
 .footer {
   padding-bottom: 40px;
   display: flex;
@@ -12,8 +14,7 @@
     flex-direction: column;
 
     #mainTitle {
-      font-family: "RaleWay";
-    
+   font-family: $text-font;
       color: white;
       font-size: 25pt;
     }
@@ -32,7 +33,7 @@
   .title {
     padding-bottom: 10px;
     margin-top: 20px;
-    font-family: "RaleWay";
+    font-family: $text-font;
     color: white;
     font-size: 15pt;
   }
