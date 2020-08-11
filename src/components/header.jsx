@@ -5,7 +5,7 @@ import "animate.css";
 const Header = ({ he }) => {
 
   let [headerClass, setHeaderClass] = useState(
-    "navbar navbar-expand-lg navbar-dark  header "
+    "navbar navbar-expand-lg navbar-dark header "
   );
   let [navClass, setNavClass] = useState("navbar-nav flex-row animate__backInDown ");
   const sideNav = useRef();

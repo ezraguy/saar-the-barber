@@ -1,11 +1,12 @@
 $text-font:'Rubik','Roboto', sans-serif;
 $title-font :'Special Elite';
+
 .header {
+  width: 100% !important;
   background-color: transparent !important;
   transition: 0.5s ease;
   z-index: 300;
   position: absolute;
-  width: 100% ;
   display: flex;
   justify-content: center ;
   align-items: center;
@@ -36,6 +37,7 @@ $title-font :'Special Elite';
   
 
 .sticky {
+ 
   position: fixed !important;
   background-color: #050506 !important;
 }

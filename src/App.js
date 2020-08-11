@@ -20,10 +20,10 @@ function App() {
   return (
     <div className="App">
 
-      <label class="switch">
+      <label className="switch">
 
         <input type="checkbox" onChange={changeLang} />
-        <div class="slider round"><span> EN </span>   <span> HE </span></div>
+        <div className="slider round"><span> EN </span>   <span> HE </span></div>
 
 
       </label>
