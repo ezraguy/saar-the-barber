@@ -5,28 +5,26 @@ $title-font :'Special Elite';
   transition: 0.5s ease;
   z-index: 300;
   position: absolute;
-  width: 100%;
+  width: 100% ;
   display: flex;
   justify-content: center ;
-  
+  align-items: center;
   .nav-link {
     transition: 0.3s ease;
   }
   #navbarNav {
-   
-   display: flex;
-  
-    justify-content: center !important; 
-    
+    justify-content: center;
     li {
       font-size: 13pt;
       font-family:$text-font;
       padding-right: 3rem;
       padding-left: 3rem;
+    }
     } 
   }
 
   .navbar-brand {
+
     position: absolute;
     left: 5px;
     font-weight: 600;
@@ -36,13 +34,11 @@ $title-font :'Special Elite';
     display: none;
   }
   
-}
 
 .sticky {
   position: fixed !important;
   background-color: #050506 !important;
 }
-
 @media screen and (max-width: 991px) {
   .navbar-nav {
     display: none;
@@ -75,7 +71,8 @@ $title-font :'Special Elite';
       color: white;
       position: absolute;
       top: 10px;
-     
+      right:45%;
+
       cursor: pointer;
       font-size: 20pt;
     }
