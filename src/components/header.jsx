@@ -65,9 +65,9 @@ const Header = ({ he }) => {
               </a>
             </li>
             <li className="nav-item order-2">
-              <a className="nav-link" href="#aboutMe" onClick={handleSideNav}>
-                {he && <span>קצת עלי</span>}
-                {!he && <span>ABOUT</span>}
+              <a className="nav-link" href="#info" onClick={handleSideNav}>
+                {he && <span>קצת מידע</span>}
+                {!he && <span>INFO</span>}
               </a>
             </li>
             <li className="nav-item order-1">

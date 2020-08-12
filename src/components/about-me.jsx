@@ -8,7 +8,7 @@ import MainButton from "./main-button";
 const AboutMe = ({ he }) => {
 
   return (
-    <div id="aboutMe" className="about-me container-fluid">
+    <div id="info" className="about-me container-fluid">
       <div className="row">
         <div className={he ? 'container right-panel col-12 col-lg-6 order-2 ' : 'container right-panel col-12 col-lg-6  '}>
           <div className={he ? "map container " : ' map container justify-content-end'}>
