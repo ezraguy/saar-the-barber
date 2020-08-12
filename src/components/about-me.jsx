@@ -4,18 +4,14 @@ import { ReactComponent as PhoneSvg } from "../svg/phone.svg";
 import { ReactComponent as AddressSvg } from "../svg/address.svg";
 import { ReactComponent as ClockSvg } from "../svg/clock.svg";
 import MainButton from "./main-button";
-const Map = lazy(() => import('./map'));
-
+const Map = lazy(() => import('./map'))
 const AboutMe = ({ he }) => {
   return (
     <div id="info" className="about-me container-fluid">
       <div className="row">
-
-        <Suspense fallback={<div className={he ? 'container right-panel col-12 col-lg-6 order-2 ' : 'container right-panel col-12 col-lg-6  '}>Loading</div>}>
-
+        <Suspense fallback={<div> </div>}>
           <Map he={he} />
         </Suspense>
-
 
         <div className={he ? 'container left-panel col-12 col-lg-6 rtl  ' : 'container left-panel col-12 col-lg-6 '}>
           <div className="info ">
