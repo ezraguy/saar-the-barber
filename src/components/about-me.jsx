@@ -1,28 +1,20 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import "../scss/about-me.scss";
 import { ReactComponent as PhoneSvg } from "../svg/phone.svg";
 import { ReactComponent as AddressSvg } from "../svg/address.svg";
 import { ReactComponent as ClockSvg } from "../svg/clock.svg";
 import MainButton from "./main-button";
+const Map = lazy(() => import('./map'));
 
 const AboutMe = ({ he }) => {
   return (
     <div id="info" className="about-me container-fluid">
       <div className="row">
-        <div className={he ? 'container right-panel col-12 col-lg-6 order-2 ' : 'container right-panel col-12 col-lg-6  '}>
-          <div className={he ? "map container " : ' map container justify-content-end'}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3379.017612591515!2d34.82635138449781!3d32.122826624358595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4929572d0da3%3A0x7e0f7b453972932d!2sSaar%20the%20barber!5e0!3m2!1siw!2sil!4v1596541789336!5m2!1siw!2sil"
-              width="500"
-              height="350"
-              frameBorder="0"
-              title="barbershop"
-              allowFullScreen={false}
-              aria-hidden="false"
-              tabIndex="0"
-            ></iframe>
-          </div>
-        </div>
+
+        <Suspense fallback={<div className={he ? 'container right-panel col-12 col-lg-6 order-2 ' : 'container right-panel col-12 col-lg-6  '}>Loading</div>}>
+
+          <Map he={he} />
+        </Suspense>
 
 
         <div className={he ? 'container left-panel col-12 col-lg-6 rtl  ' : 'container left-panel col-12 col-lg-6 '}>
