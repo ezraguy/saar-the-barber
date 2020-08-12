@@ -1,17 +1,16 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import "../scss/about-me.scss";
 import { ReactComponent as PhoneSvg } from "../svg/phone.svg";
 import { ReactComponent as AddressSvg } from "../svg/address.svg";
 import { ReactComponent as ClockSvg } from "../svg/clock.svg";
 import MainButton from "./main-button";
-const Map = lazy(() => import('./map'))
+import Map from './map';
 const AboutMe = ({ he }) => {
   return (
     <div id="info" className="about-me container-fluid">
       <div className="row">
-        <Suspense fallback={<div> </div>}>
-          <Map he={he} />
-        </Suspense>
+
+        <Map he={he} />
 
         <div className={he ? 'container left-panel col-12 col-lg-6 rtl  ' : 'container left-panel col-12 col-lg-6 '}>
           <div className="info ">
