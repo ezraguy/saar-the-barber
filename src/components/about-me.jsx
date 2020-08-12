@@ -6,7 +6,6 @@ import { ReactComponent as ClockSvg } from "../svg/clock.svg";
 import MainButton from "./main-button";
 
 const AboutMe = ({ he }) => {
-
   return (
     <div id="info" className="about-me container-fluid">
       <div className="row">

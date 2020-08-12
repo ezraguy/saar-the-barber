@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import './App.css';
 import Main from './components/main-section';
 import Header from './components/header';
 import 'aos/dist/aos.css';
 import AboutMe from './components/about-me';
-import Gallery from './components/gallery';
 import Reviews from './components/reviews';
 import Aos from "aos";
 import Footer from './components/footer';
+const Gallery = lazy(() => import('./components/gallery'))
 
 
 function App() {
@@ -31,7 +31,9 @@ function App() {
       <Main he={he} />
       <AboutMe he={he} />
       <Reviews he={he} />
-      <Gallery he={he} />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Gallery he={he} />
+      </Suspense>
       <Footer he={he} />
     </div>
   );
