@@ -11,6 +11,7 @@ $title-font :'Special Elite';
   justify-content: center ;
   align-items: center;
   .nav-link {
+    color: white !important ;
     transition: 0.3s ease;
   }
   #navbarNav {
@@ -25,7 +26,6 @@ $title-font :'Special Elite';
   }
 
   .navbar-brand {
-
     position: absolute;
     left: 5px;
     font-weight: 600;
@@ -37,7 +37,6 @@ $title-font :'Special Elite';
   
 
 .sticky {
- 
   position: fixed !important;
   background-color: #050506 !important;
 }

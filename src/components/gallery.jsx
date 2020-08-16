@@ -11,7 +11,7 @@ const Gallery = ({ he }) => {
   ]);
   return (
     <div id="gallery" className="contaniner-fluid gallery">
-      <p className="title">{he ? 'בואו לעקוב אחרי באינסטגרם' : 'Check me out on Insatgram'}</p>
+      <p className="title">{he ? 'בואו לעקוב אחרי באינסטגרם' : 'Check me out on Instagram'}</p>
       <div className="container-fluid">
         <div className="row justify-content-center">
           {posts.map((post) => {
