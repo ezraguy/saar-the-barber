@@ -15,10 +15,7 @@ const Header = ({ he }) => {
       sideNav.current.style.display = "inline-block";
       setNavClass("navbar-nav animate__backInDown ");
     } else {
-      setNavClass("navbar-nav animate__backOutDown ");
-      setTimeout(() => {
-        sideNav.current.style.display = "none";
-      }, 500);
+      sideNav.current.style.display = "none";
     }
   };
   const handleHeader = () => {
