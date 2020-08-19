@@ -34,11 +34,11 @@ const Reviews = ({ he }) => {
   return (
     <div id="reviews" className="reviews container-fluid">
       <img src={background} className="background" alt="" />
-      <div className="reviews-content container-fluid">
-        <div className="title container">
-          <p>{he ? 'מה לקוחות חושבים עלי' : 'What customers say about me'}</p>
-        </div>
+
+      <div className="title container">
+        <p>{he ? 'מה לקוחות חושבים עלי' : 'What customers say about me'}</p>
       </div>
+
 
       <div className="carousel">
         <div
@@ -60,10 +60,10 @@ const Reviews = ({ he }) => {
                       className="review-text d-flex justify-content-center"
 
                     >
-                      <p className={he ? "mb-2 text-right" : "mb-2 text-left"}>{he ? review.heText : review.enText}</p>
+                      <p className={he ? "text-right" : "text-left"}>{he ? review.heText : review.enText}</p>
                     </div>
                     <br />
-                    <div className="name mt-2">{review.name}</div>
+                    <div className="name mt-1">{review.name}</div>
                   </div>
                 );
               })}
@@ -93,12 +93,14 @@ const Reviews = ({ he }) => {
             ></span>
             <span className="sr-only">Next</span>
           </a>
-          <MainButton
-            he={he}
-            className="write-review"
-            text={he ? 'כתוב ביקורת' : "Write a review"}
-            location="https://g.page/saarthebarber/review?gm"
-          />
+          <div className="write-review">
+            <MainButton
+              he={he}
+              text={he ? 'כתוב ביקורת' : "Write a review"}
+              location="https://g.page/saarthebarber/review?gm"
+            />
+          </div>
+
         </div>
       </div>
     </div>
