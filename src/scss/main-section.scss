@@ -4,7 +4,7 @@ $title-font :'Special Elite';
 .mainWrap {
   overflow-x: hidden;
   width: 100%;
-  height: 85vh;
+  height: 100vh;
   margin: 0;
   position: relative;
   background: black;
@@ -45,7 +45,7 @@ $title-font :'Special Elite';
     }
     .textUnderImg {
       font-size: 22pt;
-      font-family: $title-font  ;
+      font-family: $title-font;
     }
     p {
       margin-bottom: 0;
@@ -60,7 +60,8 @@ $title-font :'Special Elite';
       font-family: $title-font ;
     };
 
-  .mainWrap{
-    overflow: hidden;
-  }
+    .mainWrap{
+      height: fill;
+      overflow: hidden;
+    }
 }
