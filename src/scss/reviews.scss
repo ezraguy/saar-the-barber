@@ -10,8 +10,8 @@ $title-font :'Special Elite';
   color: white;
 
   .carousel-item {
-    height: 245px !important;
-    padding-top: 50px;
+    height: 300px !important;
+    padding-top: 60px;
     
   }
  
@@ -23,7 +23,7 @@ $title-font :'Special Elite';
   }
 
     .title {
-      padding-top: 80px;
+      
       text-align: center;
       display: flex;
       justify-content: center;
@@ -42,7 +42,7 @@ $title-font :'Special Elite';
     justify-content: center;
     align-items: center;
     width: inherit;
-    margin-top: 50px;
+    height: inherit;
     text-align: center;
     
   }
@@ -60,16 +60,16 @@ $title-font :'Special Elite';
   }
   .name {
     font-style: italic;
-    margin-top: 50px;
-   
   }
   .review-text {
+    
     font-family: $text-font;
     word-break: word;
+    height: 120px;
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
-    height: 100px;
+    
   }
   .write-review{
    margin-top: 20px;

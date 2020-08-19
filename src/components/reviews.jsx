@@ -57,13 +57,13 @@ const Reviews = ({ he }) => {
                       })}
                     </div>
                     <div
-                      className="review-text d-flex justify-content-center"
+                      className=" d-flex justify-content-center align-items-center"
 
                     >
-                      <p className={he ? "text-right" : "text-left"}>{he ? review.heText : review.enText}</p>
+                      <p className={he ? "text-right review-text" : "text-left review-text"}>{he ? review.heText : review.enText}</p>
                     </div>
                     <br />
-                    <div className="name mt-1">{review.name}</div>
+                    <div className="name">{review.name}</div>
                   </div>
                 );
               })}

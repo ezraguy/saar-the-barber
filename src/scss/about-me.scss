@@ -11,7 +11,6 @@ $title-font :'Special Elite';
   .left-panel {
     padding-top: 20px;
     display: flex;
-  
     font-family: $text-font;
     .title {
       font-size: 25pt;
@@ -29,6 +28,7 @@ $title-font :'Special Elite';
       padding-bottom: 20px;
       position: relative;
       display: flex;
+    
     }
   }
 
@@ -63,4 +63,14 @@ $title-font :'Special Elite';
       }
     }
   }
+}
+
+
+@media screen and (max-width: 991px) {
+ .map{
+  padding-bottom: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+ }
 }
