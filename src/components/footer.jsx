@@ -16,7 +16,7 @@ const Footer = ({ he }) => {
         <div className="explore col-lg-3 col-xl-3 col-12 ">
           <div className="title">{he ? 'ניווט' : 'Explore'}</div>
           <a href="#home">{he ? 'דף הבית' : 'HOME'}</a>
-          <a href="#aboutMe">{he ? 'קצת עלי' : 'ABOUT'}</a>
+          <a href="#info">{he ? 'קצת עלי' : 'ABOUT'}</a>
           <a href="#reviews">{he ? 'ביקורות' : 'REVIEWS'}</a>
           <a href="#gallery">{he ? 'גלריה' : 'GALLERY'}</a>
         </div>
