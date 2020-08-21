@@ -31,7 +31,9 @@ $title-font :'Special Elite';
       color: white;
       font-family: $text-font ;
       p {
-        position: absolute;
+        margin-bottom: 0;
+        margin-top: 50px;
+        z-index: 10;
         color: white;
       }
     }

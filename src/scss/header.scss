@@ -6,14 +6,16 @@ $title-font :'Special Elite';
   background-color: transparent !important;
   transition: 0.5s ease;
   z-index: 300;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center ;
   align-items: center;
+ 
   .nav-link {
     color: white !important ;
     transition: 0.3s ease;
   }
+
   #navbarNav {
     justify-content: center;
     li {
@@ -37,7 +39,6 @@ $title-font :'Special Elite';
   
 
 .sticky {
-  position: fixed !important;
   background-color: #050506 !important;
 }
 @media screen and (max-width: 991px) {
@@ -59,7 +60,9 @@ $title-font :'Special Elite';
     background-color: rgb(28, 27, 27);
 
     .nav-item {
+    
       .nav-link {
+       
         font-size: 32pt;
         color: #eec45f !important;
         &:hover {

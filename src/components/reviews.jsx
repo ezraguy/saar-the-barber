@@ -35,12 +35,13 @@ const Reviews = ({ he }) => {
     <div id="reviews" className="reviews container-fluid">
       <img src={background} className="background" alt="" />
 
-      <div className="title container">
-        <p>{he ? 'מה לקוחות חושבים עלי' : 'What customers say about me'}</p>
-      </div>
 
 
       <div className="carousel">
+        <div className="title mx-auto">
+          <p>{he ? 'מה לקוחות חושבים עלי' : 'What customers say about me'}</p>
+        </div>
+
         <div
           id="carouselExampleControls"
           className="carousel slide"

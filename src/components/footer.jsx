@@ -16,15 +16,18 @@ const Footer = ({ he }) => {
         <div className="explore col-lg-3 col-xl-3 col-12 ">
           <div className="title">{he ? 'ניווט' : 'Explore'}</div>
           <a href="#home">{he ? 'דף הבית' : 'HOME'}</a>
-          <a href="#info">{he ? 'קצת עלי' : 'ABOUT'}</a>
+          <a href="#info">{he ? 'קצת מידע' : 'ABOUT'}</a>
           <a href="#reviews">{he ? 'ביקורות' : 'REVIEWS'}</a>
           <a href="#gallery">{he ? 'גלריה' : 'GALLERY'}</a>
         </div>
 
         <div className={he ? "lets-talk col-lg-4 col-xl-4 col-12 order-first" : "lets-talk col-lg-4 col-xl-4 col-12 order-first"} >
           <div className="title">{he ? 'לפרטים' : 'LET\'S TALK'}</div>
-          <PhoneSvg className="phone-svg" />
-          <a href="tel:0548181959">0548181959</a>
+          <div className="">
+            <PhoneSvg className={he ? 'phone-svg ml-1 float-right' : 'phone-svg mr-1 float-left'} />
+            <a href="tel:0548181959">0548181959</a>
+          </div>
+
         </div>
       </div>
     </div >

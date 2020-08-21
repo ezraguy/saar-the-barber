@@ -11,6 +11,7 @@ const Header = ({ he }) => {
   const sideNav = useRef();
 
   const handleSideNav = (action) => {
+
     if (action === "open") {
       sideNav.current.style.display = "inline-block";
       setNavClass("navbar-nav animate__backInDown ");
