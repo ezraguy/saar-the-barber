@@ -22,24 +22,24 @@ const AboutMe = ({ he }) => {
 
                 <li>
                   <span >
-                    <b>{he ? 'ראשון' : 'Sunday'}</b>: 9:00-15:30
+                    <b>{he ? 'ראשון' : 'Sunday'}</b> : 9:00-15:30
                   </span>
                 </li>
                 <li>
                   <span>
-                    <b>{he ? 'שני - חמישי' : 'Monday - Thursday'}</b>: 9:00-20:00
+                    <b>{he ? 'שני - חמישי' : ' Monday - Thursday '}</b> : 9:00-20:00
                   </span>
                 </li>
                 <li>
                   <span>
-                    <b>{he ? 'שישי' : 'Friday'}</b>: 9:00-15:00
+                    <b>{he ? 'שישי' : 'Friday'}</b> : 9:00-15:00
                   </span>
                 </li>
                 <li>
                   {he ? <span>
-                    <b>שבת</b>: סגור
+                    <b>שבת</b> : סגור
                   </span> : <span>
-                      <b>Saturday</b>: Closed
+                      <b>Saturday</b> : Closed
                   </span>}
 
                 </li>
