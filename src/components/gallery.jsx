@@ -5,7 +5,7 @@ import Card from './card'
 const Gallery = ({ he }) => {
   let [posts] = useState([
     { id: 1, url: "https://www.instagram.com/p/CDd46zxAd5X/", delay: "100" },
-    { id: 2, url: "https://www.instagram.com/p/CDt2VtoMXP8/", delay: "200" },
+    { id: 2, url: "https://www.instagram.com/p/CEZa0QYgVw3/", delay: "200" },
     { id: 3, url: "https://www.instagram.com/p/CA5VTDEAhLF/", delay: "300" },
     { id: 4, url: "https://www.instagram.com/p/CCY9UypguTI/", delay: "400" },
   ]);
