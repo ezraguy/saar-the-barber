@@ -1,7 +1,6 @@
 $text-font:'Rubik','Roboto', sans-serif;
 $title-font :'Special Elite';
 .gallery {
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,5 +21,60 @@ $title-font :'Special Elite';
       justify-content: center;
       margin-bottom: 30px;
     }
+  }
+
+  .swiper-container{
+    margin-top: 30px;
+  }
+  .slide{
+    display: grid;
+    justify-content: center;
+    padding-bottom: 20px;
+    transition: .3s ease;
+    
+    .sliderImg{
+      object-fit: cover;
+      max-width: 100%;
+      max-height: 400px;
+      object-fit: fill;
+      vertical-align: middle;
+      margin-bottom: 20px;
+
+    }
+  }
+  .swiper-button-prev,.swiper-button-next{
+    display: none;
+  }
+}
+
+
+
+@media screen and (min-width: 300px) {
+  .swiper-container {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 440px) {
+  .swiper-container {
+    width: 440px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .swiper-container {
+    width: 1400px;
   }
 }

@@ -8,14 +8,17 @@ const Card = ({ post }) => {
             data-aos="fade-down"
             data-aos-delay={post.delay}
             className="post col-xl-3 col-lg-5 col-md-5 col-sm-10 col-xs-12"
-        >
-            <InstagramEmbed
+        ><InstagramEmbed
                 url={post.url}
                 maxWidth={320}
-                hideCaption={true}
-                protocol=""
-                containerTagName="div"
+                hideCaption={false}
+                containerTagName='div'
+                protocol=''
                 injectScript
+                onLoading={() => { }}
+                onSuccess={() => { }}
+                onAfterRender={() => { }}
+                onFailure={() => { }}
             />
         </div>
 
