@@ -1,7 +1,7 @@
 import React, { } from "react";
 import "../scss/gallery.scss";
 import { useState } from "react";
-import SwiperCore, { Pagination, Autoplay, EffectFade } from 'swiper';
+import SwiperCore, { Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import pic1 from '../images/pic1.jpg';
